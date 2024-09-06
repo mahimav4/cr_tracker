@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" href="ericsson_logo.png">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Enter Details</h2>
+        <form id="details-form">
+            <label for="site-id">Site ID</label>
+            <input type="text" id="site-id" name="site-id" placeholder="Enter Site ID" autocomplete="off">
+            <div id="site-id-suggestions"></div> <!-- Suggestions for Site_ID -->
+
+            <label for="sector-id">Sector ID</label>
+            <select id="sector-id" name="sector-id" required>
+                <option value="" disabled selected>Select Sector ID</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+            <label for="band-id">Band ID</label>
+            <input type="text" id="band-id" name="band-id" placeholder="Enter Band ID" autocomplete="off">
+            <div id="band-id-suggestions"></div> <!-- Suggestions for Band_ID -->
+
+            <label for="auto-cluster-id">Cluster ID</label>
+            <input type="text" id="auto-cluster-id" name="auto-cluster-id" readonly>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
